@@ -1,10 +1,9 @@
 const config = {
-	apiKey: 'AIzaSyAd3t8dstR5FIFu6MQ9B90SIWWTb3wnyFY',
-	authDomain: 'coffee-app-5ec2e.firebaseapp.com',
-	databaseURL: 'https://coffee-app-5ec2e.firebaseio.com',
-	projectId: 'coffee-app-5ec2e',
-	storageBucket: 'coffee-app-5ec2e.appspot.com',
-	messagingSenderId: '662119049461'
+	apiKey: process.env.FIREBASE_APIKEY,
+	authDomain: process.env.FIREBASE_AUTHDOMAIN,
+	databaseURL: process.env.FIREBASE_DATABASE,
+	projectId: process.env.FIREBASE_PROJECTID,
+	storageBucket: process.env.FIREBASE_STORAGE
 };
 
 export default config;
